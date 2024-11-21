@@ -3,18 +3,22 @@
   /* outline: 1px solid fuchsia; */
   padding: 0;
   margin: 0;
-  font-family: "poppins";
+  font-family: "poppins", sans-serif;
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
 }
 
 :root {
-  --bg-color: #080808;
-  --second-bg-color: #001005;
-  --text-color: white;
-  --main-color: #6cff52;
-  --gradient-color: linear-gradient(to right, #6cff52, #3ec5ff);
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #7cf03d;
+  --gradient-color: linear-gradient(to right, #7cf03d, #3ec5ff);
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -50,7 +54,7 @@ section {
 }
 
 #menu-icon {
-  font-size: 3rem;
+  font-size: 4rem;
   color: var(--main-color);
   cursor: pointer;
   display: none;
@@ -88,8 +92,8 @@ section {
   color: transparent;
 }
 
-/* HERO / HOME */
-.hero {
+/* HOME */
+.home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,6 +126,7 @@ section {
 }
 
 .home-image img {
+  position: relative;
   width: 32vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
