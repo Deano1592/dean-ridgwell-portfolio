@@ -35,7 +35,7 @@ span {
 
 section {
   min-height: 100vh;
-  padding: 6rem 12%;
+  padding: 10rem 12%;
 }
 
 /* HEADER / NAVBAR */
@@ -77,7 +77,7 @@ section {
 }
 
 .navbar a {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: var(--text-color);
   font-weight: 600;
   margin-left: 4rem;
