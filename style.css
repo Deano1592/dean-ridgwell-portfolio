@@ -85,6 +85,7 @@ hr {
   color: var(--text-color);
   font-weight: 600;
   margin-left: 4rem;
+  text-wrap: nowrap;
   border-bottom: 3px transparent;
   transition: 0.3s ease-in-out;
 }
