@@ -39,7 +39,7 @@ section {
 }
 
 hr {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--bg-color);
 }
 
 .social-icons a {
@@ -274,4 +274,31 @@ hr {
 /* CONTACT */
 .contact {
   background: var(--second-bg-color);
+}
+
+.contact h2 {
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.5rem 0;
+  resize: none;
 }
