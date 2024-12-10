@@ -94,7 +94,7 @@ hr {
 .heading {
   text-align: center;
   font-size: 7rem;
-  margin: 5rem 0;
+  margin-bottom: 5rem;
 }
 
 /* HEADER / NAVBAR */
@@ -283,7 +283,6 @@ hr {
 
 .contact form {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 3rem;
   margin: 5rem 0;
@@ -299,6 +298,50 @@ hr {
   background-color: var(--bg-color);
   border-radius: 2rem;
   border: 2px solid var(--main-color);
-  margin: 1.5rem 0;
+  margin-bottom: 2rem;
   resize: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* FOOTER */
+.footer {
+  padding: 2rem 0;
+}
+
+.footer .social-icons {
+  text-align: center;
+}
+
+.footer ul {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.footer a {
+  color: var(--text-color);
+  border-bottom: 3px transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.footer a:hover {
+  border-bottom: 3px solid var(--main-color);
+  background: var(--gradient-color);
+  background-clip: text;
+  color: transparent;
+}
+
+.footer .copyright {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.6rem;
 }
