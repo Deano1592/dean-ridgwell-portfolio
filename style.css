@@ -327,21 +327,49 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-left: 2rem;
 }
 
-.footer a {
+.footer ul li a {
   color: var(--text-color);
   border-bottom: 3px transparent;
   transition: 0.3s ease-in-out;
 }
 
-.footer a:hover {
+.footer ul li a:hover {
   border-bottom: 3px solid var(--main-color);
   background: var(--gradient-color);
   background-clip: text;
   color: transparent;
 }
-
 .footer .copyright {
   text-align: center;
   margin-top: 4rem;
   font-size: 1.6rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1285px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3rem;
+    background: rgba(31, 36, 45, 0.8);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    display: none;
+  }
+
+  .navbar .nav-links {
+    display: block;
+  }
+
+  .navbar ul li {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 3rem 0;
+  }
 }
