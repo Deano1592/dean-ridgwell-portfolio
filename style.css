@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: var(--bg-color);
+  background: var(--second-bg-color);
   color: var(--text-color);
 }
 
@@ -36,10 +36,6 @@ span {
 section {
   min-height: 100vh;
   padding: 10rem 10%;
-}
-
-hr {
-  border: 1px solid var(--bg-color);
 }
 
 .social-icons a {
@@ -207,10 +203,6 @@ hr {
   background-color: var(--second-bg-color);
 }
 
-.about-content h2 {
-  font-size: 7rem;
-}
-
 .about-content p {
   font-size: 1.8rem;
 }
@@ -274,11 +266,6 @@ hr {
 /* CONTACT */
 .contact {
   background: var(--second-bg-color);
-}
-
-.contact h2 {
-  margin-bottom: 3rem;
-  color: var(--text-color);
 }
 
 .contact form {
@@ -371,5 +358,24 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 2rem;
     color: var(--text-color);
     margin: 3rem 0;
+  }
+
+  .navbar .active {
+    display: block;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    margin: 5rem 0;
+    gap: 5rem;
+  }
+
+  .home-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 56vw;
   }
 }
