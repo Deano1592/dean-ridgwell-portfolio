@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -154,7 +154,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 15rem;
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .home-content {
@@ -183,7 +183,7 @@ section {
 }
 
 .home-image img {
-  width: 32vw;
+  width: 26vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -200,7 +200,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 10rem;
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 }
 
 .about-content p {
@@ -208,7 +208,7 @@ section {
 }
 
 .about-img img {
-  width: 32vw;
+  width: 26vw;
   border-radius: 50%;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
@@ -216,7 +216,7 @@ section {
 
 /* PROJECTS */
 .projects {
-  background-color: var(--second-bg-color);
+  background-color: var(--bg-color);
 }
 
 .projects-container {
@@ -233,7 +233,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   border: 2px solid var(--main-color);
   border-radius: 3rem;
   gap: 2rem;
@@ -265,7 +265,7 @@ section {
 
 /* CONTACT */
 .contact {
-  background: var(--second-bg-color);
+  background: var(--bg-color);
 }
 
 .contact form {
@@ -282,7 +282,7 @@ section {
   padding: 2.5rem;
   font-size: 1.8rem;
   color: var(--text-color);
-  background-color: var(--bg-color);
+  background-color: var(--second-bg-color);
   border-radius: 2rem;
   border: 2px solid var(--main-color);
   margin-bottom: 2rem;
@@ -341,7 +341,7 @@ input[type="number"]::-webkit-outer-spin-button {
     position: absolute;
     top: 100%;
     right: 0;
-    width: 50%;
+    width: 40%;
     padding: 1rem 3rem;
     background: rgba(31, 36, 45, 0.8);
     border-bottom-left-radius: 2rem;
@@ -360,7 +360,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 3rem 0;
   }
 
-  .navbar .active {
+  .navbar.active {
     display: block;
   }
 
@@ -376,6 +376,24 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .home-image img {
-    width: 56vw;
+    width: 32vw;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about h2 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .about img {
+    width: 28vw;
+  }
+
+  .contact form {
+    flex-direction: column;
   }
 }
